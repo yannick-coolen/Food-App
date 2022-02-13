@@ -18,7 +18,7 @@ export default function App() {
 
   return (
     <CardProvider>
-      {showCart && <Cart onCloseCart={hideCartHandler} />}
+      {showCart && <Cart onClose={hideCartHandler} />}
       <Header onShowCart={ShowCartHandler} />
       <main>
         <Meals />
